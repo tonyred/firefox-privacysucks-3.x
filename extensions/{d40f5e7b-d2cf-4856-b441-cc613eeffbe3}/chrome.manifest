@@ -1,0 +1,39 @@
+content	bp	content/
+
+locale  bp  da       locale/da/
+locale  bp  da-DK    locale/da/
+locale  bp  de       locale/de/
+locale  bp  de-DE    locale/de/
+locale  bp  en       locale/en-US/
+locale  bp  en-GB    locale/en-US/
+locale  bp  en-US    locale/en-US/
+locale  bp  es-AR    locale/es-AR/
+locale  bp  es-ES    locale/es-ES/
+locale  bp  fr       locale/fr/
+locale  bp  fr-FR    locale/fr/
+locale  bp  nl       locale/nl/
+locale  bp  nl-NL    locale/nl/
+locale  bp  pt-BR    locale/pt-BR/
+locale  bp  ru       locale/ru/
+locale  bp  ru-RU    locale/ru/
+locale  bp  sv-SE    locale/sv-SE/
+locale  bp  tr       locale/tr-TR/
+locale  bp  tr-TR    locale/tr-TR/
+locale  bp  vi       locale/vi/
+locale  bp  zh-CN    locale/zh-CN/
+locale  bp  zh-TW    locale/zh-TW/
+
+
+skin	bp	classic	skin/
+
+overlay	chrome://navigator/content/navigator.xul chrome://bp/content/menu.xul
+overlay  chrome://communicator/content/pref/pref-security.xul chrome://bp/content/sanitizer.xul
+overlay  chrome://communicator/content/sanitize.xul	chrome://bp/content/sanitizer.xul
+
+overlay	chrome://browser/content/browser.xul chrome://bp/content/menu.xul
+overlay  chrome://browser/content/preferences/sanitize.xul	chrome://bp/content/sanitizer.xul
+overlay  chrome://browser/content/sanitize.xul	chrome://bp/content/sanitizer.xul
+
+overlay	chrome://mozapps/content/extensions/extensions.xul 	chrome://bp/content/extovl.xul
+
+style	chrome://global/content/customizeToolbar.xul	chrome://bp/skin/BetterPrivacyButton.css

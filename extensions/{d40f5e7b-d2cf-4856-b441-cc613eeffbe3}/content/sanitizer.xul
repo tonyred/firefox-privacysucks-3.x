@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://bp/locale/bp.dtd">
+
+
+ <overlay id="bpsanitizer" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+   <script type="application/x-javascript" src="chrome://bp/content/bp.js"/>
+   <script type="application/x-javascript" src="chrome://bp/content/utils.js"/>
+
+
+   <script type="application/x-javascript">
+ 		  window.addEventListener("load", bpriv.addSanitizeMenuItem, true);
+   </script>
+
+ </overlay>

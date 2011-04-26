@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bp/skin/BetterPrivacyButton.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://bp/locale/bp.dtd">
+
+<overlay id="BPOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onclose="alert(3);">
+
+	<script type="application/x-javascript" src="chrome://bp/content/bp.js"/>
+	<script type="application/x-javascript" src="chrome://bp/content/utils.js"/>
+	<stringbundleset>
+		<stringbundle id="strBundle" src="chrome://bp/locale/bp.properties"/>
+	</stringbundleset>
+
+	<!--SeaMonkey-->
+	<menupopup id="taskPopup">
+		<menuitem label="BetterPrivacy" insertafter="sanitizeItem" oncommand="bpriv.showBetterPrivacy();" />
+	</menupopup>
+
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="BetterPrivacy" insertafter="sanitizeItem" oncommand="bpriv.showBetterPrivacy();" />
+	</menupopup>
+
+
+	<keyset>
+		<key id="key_bp" disabled="true" oncommand="bpriv.onKeyCode();" />
+	</keyset>
+
+
+  <script type="application/x-javascript">
+
+	window.addEventListener("load", bpriv.firstload, true);
+
+
+	if(bpriv.isSeaMonkey){
+		window.addEventListener("close", function(event) { //catches Firefox window close (x in upper right corner)
+			if(event.originalTarget.windowtype="navigator:browser"){bpriv.onexit(event);}
+		}, true);  	//do not remove EventListene - printpreview issue
+	}
+  </script>
+
+
+
+	<toolbarpalette id="BrowserToolbarPalette">
+	  <toolbarbutton id="BetterPrivacyButton" class="toolbarbutton-1"
+	    label=" Better Privacy" tooltiptext=" Better Privacy"
+	    oncommand="bpriv.showBetterPrivacy();"/>
+	</toolbarpalette>
+
+
+
+</overlay>

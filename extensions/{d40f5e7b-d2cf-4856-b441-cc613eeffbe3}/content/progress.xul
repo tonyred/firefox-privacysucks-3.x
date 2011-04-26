@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://bp/locale/bp.dtd">
+
+
+
+
+
+<window id="ExitWindow" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+title="BetterPrivacy" 
+buttons="," 
+onload="setTimeout(function(){bpriv.processProgressWindow(window, window.arguments[0]);}, 750, window, window.arguments[0]);"
+onclick="if(confirm('BetterPrivacy\r\nAbort this procedure?')) window.close();"
+>
+
+
+
+	<stringbundleset>
+		<stringbundle id="strBundle" src="chrome://bp/locale/bp.properties"/>
+	</stringbundleset>
+
+	<script type="application/x-javascript" src="chrome://bp/content/bp.js"/>
+	<script type="application/x-javascript" src="chrome://bp/content/utils.js"/>
+	
+	<script type="application/x-javascript">  
+  		<![CDATA[
+  		]]>
+	</script>
+
+
+	<vbox align="center" pack="center" flex="1">
+		<hbox align="center" pack="center" flex="1" style="width: 350px; height: 80px;">
+			<description id="exitstatus" flex="1" style="font-weight: bold; text-align: center;">&exitstatus;</description>
+		</hbox>
+	</vbox>
+
+
+</window>

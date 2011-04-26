@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+
+
+<overlay id="bpriv-extensions-overlay"
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+   <script type="application/x-javascript" src="chrome://bp/content/bp.js"/>
+   <script type="application/x-javascript" src="chrome://bp/content/utils.js"/>
+
+   <script type="application/x-javascript">
+   <![CDATA[
+      window.addEventListener("load", function(aEvent) {
+        aEvent.currentTarget.removeEventListener("load", arguments.callee, false);
+        bpriv.extopened();
+      }, false);
+   ]]>
+   </script>
+
+
+</overlay>

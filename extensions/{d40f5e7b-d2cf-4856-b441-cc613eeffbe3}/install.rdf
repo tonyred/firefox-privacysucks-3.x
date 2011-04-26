@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <!--Firefox-->
+  <RDF:Description RDF:about="rdf:#$QKbAc1"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.5"
+                   em:maxVersion="4.0.*"
+  />
+
+  <!--SeaMonkey-->
+  <Description RDF:about="rdf:#$dLacB4"
+                   em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
+                   em:minVersion="2.0a1"
+                   em:maxVersion="2.1b3"
+  />
+
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}"
+                   em:name="BetterPrivacy"
+                   em:version="1.50"
+                   em:type="2"
+                   em:creator="Greg Yardley (version 0.2) www.yardley.ca"
+                   em:description="&quot;Super-Cookie Safeguard&quot;"
+                   em:homepageURL="http://netticat.ath.cx/extensions.html"
+                   em:iconURL="chrome://bp/content/pie.png"
+                   em:developer="NettiCat"
+                   em:contributor="Icon: Lint Hasenpfeffer (concept by Evan Eckard), Code improvements: Ximin Luo, Locales: DE by Endor and others by BabelZilla team"
+                   em:optionsURL="chrome://bp/content/bp.xul"
+                   em:locale="locale/"
+  >
+
+    <em:targetApplication RDF:resource="rdf:#$dLacB4"/>
+    <em:targetApplication RDF:resource="rdf:#$QKbAc1"/>
+  </RDF:Description>
+</RDF:RDF>
