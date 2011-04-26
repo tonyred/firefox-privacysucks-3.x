@@ -26,3 +26,8 @@ Installed Add-ons
 - Flashblock https://addons.mozilla.org/en-US/firefox/addon/flashblock/
 - CookieSafe https://addons.mozilla.org/en-US/firefox/addon/cookiesafe/
 - BetterPrivacy https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/
+
+Check your privacy
+------------------
+
+To check your privacy visit http://privacysucks.com.
