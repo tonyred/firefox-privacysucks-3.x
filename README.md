@@ -30,4 +30,4 @@ Installed Add-ons
 Check your privacy
 ------------------
 
-To check your privacy visit http://privacysucks.com.
+To check your privacy visit http://privacysucks.com
