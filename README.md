@@ -21,12 +21,24 @@ websites are not reported anywhere)
 - DOM Storage is disabled
 - Sending HTTP Referer is disabled
 
-Installed Add-ons
------------------
+Preinstalled Add-ons
+--------------------
 
 - Flashblock https://addons.mozilla.org/en-US/firefox/addon/flashblock/
 - CookieSafe https://addons.mozilla.org/en-US/firefox/addon/cookiesafe/
 - BetterPrivacy https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/
+
+Installation
+------------
+
+Unpack the profile to the Firefox profiles directories depending on your OS
+(http://support.mozilla.com/en-US/kb/Profiles) using the following name convention:
+
+	randomstring.privacysucks/
+
+Start Firefox with ProfileManager and select this profile.
+
+	firefox -profileManager -no-remote
 
 Check your privacy
 ------------------
