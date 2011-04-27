@@ -61,6 +61,7 @@ user_pref("layout.spellcheckDefault", 0);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.prefsMigrated", true);
+user_pref("network.http.sendRefererHeader", 0);
 user_pref("network.proxy.socks_remote_dns", true);
 user_pref("privacy.sanitize.migrateFx3Prefs", true);
 user_pref("signon.rememberSignons", false);

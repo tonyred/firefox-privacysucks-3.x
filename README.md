@@ -19,6 +19,7 @@ websites are not reported anywhere)
 - Use remote DNS when using SOCKS proxy
 - Geolocation is disabled
 - DOM Storage is disabled
+- Sending HTTP Referer is disabled
 
 Installed Add-ons
 -----------------
